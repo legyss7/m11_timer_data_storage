@@ -32,7 +32,7 @@ class Repository(private var localValue: String? = null) {
         val editor = prefs.edit()
         editor.remove(SHARED_PREFS_KEY)
         editor.apply()
-        localValue = null
+        localValue = ""
     }
 
     fun getText(context: Context): String {
