@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">hw11</string>
+    <string name="save_text">Save Text</string>
+    <string name="clear_text">Clear Text</string>
+</resources>
