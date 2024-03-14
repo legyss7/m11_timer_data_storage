@@ -10,12 +10,10 @@ class Repository(private var localValue: String? = null) {
 
     private fun getDataFromSharedPreference(context: Context): String? {
         val prefs = context.getSharedPreferences(PREFERENCE_NAME, Context.MODE_PRIVATE)
-        Log.d("myLog", prefs.getString(SHARED_PREFS_KEY, null).toString())
         return prefs.getString(SHARED_PREFS_KEY, null)
     }
 
     private fun getDataFromLocalVariable(): String? {
-        Log.d("myLog", localValue.toString())
         return localValue
     }
 
